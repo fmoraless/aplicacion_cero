@@ -4,3 +4,12 @@ pruebas_index:
     methods: [GET, POST]
     requirements:
         page: \d+
+        
+pruebas_create:
+    path: /pruebas/create
+    defaults: { _controller: AppBundle:Pruebas:create }
+    methods: [GET, POST]
+    
+pruebas_read:
+    path: /pruebas/read
+    defaults: { _controller: AppBundle:Pruebas:read }
